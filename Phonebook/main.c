@@ -18,6 +18,7 @@ int main(void)
         2 - print all\n\
         3 - delete data under specific number\n\
         4 - sort data by surname (alphabetically)\n\
+        5 - sort friends by Birthday (from older to younger)\n\
         6 - save data in a file\n\
         7 - read data from a given file\n");
         switch(getch())
@@ -60,6 +61,9 @@ int main(void)
                 break;
             case '4':
                 Sort_Surname(DB, DBSize);
+                break;
+            case '5':
+                Sort_Birthday(DB, DBSize);
                 break;
             case '6':
                 printf("Save data in file: ");
